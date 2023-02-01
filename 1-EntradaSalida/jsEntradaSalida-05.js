@@ -14,7 +14,7 @@ function mostrar()
 	nombreIngresado = document.getElementById("txtIdNombre").value; // guardo el dato ingresado
 	edadIngresada = document.getElementById("txtIdEdad").value;
 
-	mensaje = "Usted se llama " + nombreIngresado + " y tiene " + edadIngresada; // concateno el texto
+	mensaje = "Usted se llama " + nombreIngresado + " y tiene " + edadIngresada + " años"; // concateno el texto
 	
 	alert(mensaje); // muestro el dato ingresado
 }
