@@ -41,11 +41,11 @@ function SacarResto()
 	numUno = parseInt(numUno);
 	numDos = parseInt(numDos);
 
-	// A
+	//A
 	mensajeSuma = "La suma es " + (numUno + numDos);
-	// B
+	//B
 	mensajePromedio = "El promedio de los numeros es: " + ((numUno + numDos) / 2);
-	// C
+	//C
 	mensajeModulo = "El Modulo de ambos numeros es: " + numUno % numDos;
 
 	alert(mensajeSuma);
