@@ -35,5 +35,4 @@ function mostrarAumento()
 	importeFinal = importe - (importe * descuento/100);
 
 	document.getElementById("txtIdResultado").value = importeFinal;
-
 }
