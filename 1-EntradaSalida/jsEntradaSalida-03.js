@@ -36,7 +36,6 @@ function mostrar()
 	mensaje = descripciónProd + " $" + precioTotal;
 
 	alert(mensaje);
-
 }
 
 
