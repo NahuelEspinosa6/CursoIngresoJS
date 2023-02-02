@@ -6,7 +6,7 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar () 
 {
-	let productoUno;
+    let productoUno;
     let productoDos;
     let productoTres;
     let mensaje;
@@ -52,7 +52,7 @@ function PrecioFinal ()
     let productoDos;
     let productoTres;
     let iva;
-    let preciofinal;
+    let precioFinal;
     let mensaje;
 
     productoUno = document.getElementById("txtIdPrecioUno").value;
@@ -63,7 +63,7 @@ function PrecioFinal ()
     productoDos = parseInt(productoDos);
     productoTres = parseInt(productoTres);
 
-    preciofinal = productoUno + productoDos + productoTres;
+    precioFinal = productoUno + productoDos + productoTres;
     iva = preciofinal + (preciofinal * 0.21)
 
     mensaje = "Precio Final con IVA:$" + iva;
