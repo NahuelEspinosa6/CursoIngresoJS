@@ -1,5 +1,5 @@
 function mostrar()
-{
+{	// Nahuel Espinosa Fuentes
 	//Al ingresar una edad debemos informar solo si la persona es mayor de edad
 
 	let edad;
