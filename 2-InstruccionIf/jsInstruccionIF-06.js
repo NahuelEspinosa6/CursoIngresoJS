@@ -5,6 +5,7 @@ function mostrar()
 	//o niño (menor a 13 años).
 
 	let edad;
+	let mensaje;
 	edad = parseInt(document.getElementById("txtIdEdad").value);
 
 	if(edad > 17){
