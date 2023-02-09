@@ -10,5 +10,66 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+ 	let cantLamp;
+    let precio = 35;
+    let descuento;
+    let operacion;
+    let precioFinal;
+    let ingBrutos;
+    let marca;
+    let aumento;
+
+    cantLamp = parseInt(document.getElementById("txtIdCantidad").value);
+    marca = document.getElementById("Marca").value;
+    
+    // A
+    if(cantLamp >= 6){
+        descuento = 50;
+    }
+
+    //B
+    if(cantLamp == 5 && marca == "ArgentinaLuz"){
+        descuento = 40;
+    }else{
+        if(cantLamp == 5 && marca != "ArgentinaLuz"){
+            descuento = 30;
+        }
+    }
+
+    //C
+    if(cantLamp == 4 && marca == "ArgentinaLuz" || cantLamp == 4 && marca == "FelipeLamparas"){
+        descuento = 25;
+    }else{
+        if(cantLamp == 4 && marca != "ArgentinaLuz" || cantLamp == 4 && marca != "FelipeLamparas"){
+            descuento = 20;
+        }
+    }
+
+    //D
+    if(cantLamp == 3 && marca == "ArgentinaLuz"){
+        descuento = 15;
+    }else{
+        if(cantLamp == 3 && marca == "FelipeLamparas"){
+            descuento = 10;
+        }else{
+            if(cantLamp == 3 && marca != "ArgentinaLuz" || cantLamp == 3 && marca != "FelipeLamparas"){
+                descuento = 5;
+            }
+        }
+    }
+
+    operacion = cantLamp * precio;
+    precioFinal = operacion - (operacion * descuento/100);
+    document.getElementById("txtIdprecioDescuento").value = precioFinal;
+     
+    // E
+    if(precioFinal >= 120){
+        ingBrutos = 10;
+        aumento = precioFinal * ingBrutos/100;
+        aumentoFinal = precioFinal + aumento;
+        mensaje = "IIBB Usted pago $"+ aumentoFinal + ", siendo $" + aumento + " el impuesto que se pagó"
+        alert(mensaje);
+    }
+
+
 }
