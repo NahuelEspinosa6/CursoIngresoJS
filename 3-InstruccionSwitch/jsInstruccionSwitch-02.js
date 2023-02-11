@@ -44,7 +44,7 @@ function mostrar()
 			mensaje = "Falta para el invierno"
 			break;
 		case "Diciembre":
-			mensaje = "Falta para elinvierno"
+			mensaje = "Falta para el invierno"
 			break;
 	}
 

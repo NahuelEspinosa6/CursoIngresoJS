@@ -26,7 +26,7 @@ function mostrar()
 			mensaje = "Felices fiesta!!!"
 			break;
 		default:
-			mensaje = "Sosaburrido"
+			mensaje = "Sos aburrido"
 			break;
 	}
 
