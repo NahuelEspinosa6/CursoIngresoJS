@@ -40,7 +40,8 @@ function mostrar()
 
 		respuesta=prompt("desea continuar? si/no");
 	} // fin del while principal
+
+	document.getElementById("txtIdMaximo").value=numeroMaximo;
+	document.getElementById("txtIdMinimmo").value=numeroMinimo;
 	
-	txtIdMaximo.value=numeroMaximo;
-	txtIdMinimmo.value=numeroMinimo;
 }//FIN DE LA FUNCIÓN
