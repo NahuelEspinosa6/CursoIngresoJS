@@ -7,10 +7,10 @@ function mostrar()
 
 	sexoIngresado = prompt("Ingrese su sexo");
 
-	while(sexoIngresado != "f" && sexoIngresado != "m"){
+	while(sexoIngresado.toLowerCase() != "f" && sexoIngresado.toLowerCase() != "m"){
 		sexoIngresado = prompt("Error, ingrese su sexo");
 	}
 
-	document.getElementById("txtIdSexo").value = sexoIngresado;
+	document.getElementById("txtIdSexo").value = sexoIngresado.toLowerCase();
 	
 }//FIN DE LA FUNCIÓN
