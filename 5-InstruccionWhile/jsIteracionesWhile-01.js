@@ -4,7 +4,7 @@ con números ASCENDENTE, desde el 1 al 10.*/
 function mostrar()
 {
 	// declaro variable
-	let i;
+	/*let i;
 
 	// inicializo la variable
 	i = 1;
@@ -12,10 +12,64 @@ function mostrar()
 	while(i < 11){
 		alert(i);
 		i = i +1;
-	}
+	}*/
+
+	//EJERCICIO 1 BIS
+	/* While 1 bis- edad y nombre , informar el nombre de la persona mas vieja y la mas joven */
 	
+	let edadIngresada;
+	let edadMenor;
+	let edadMayor;
+	let nombreIngresado;
+	let personaMayor;
+	let personaMenor;
+	let banderaDelPrimero;
+	let respuesta;
+
+	banderaDelPrimero = true;
+	respuesta = "si"
+
+	while(respuesta == "si"){
+		nombreIngresado = prompt("Ingrese su Nombre");
+		while (!isNaN(nombreIngresado)) {
+			nombreIngresado = prompt("Error, ingrese un nombre valido");
+		}
+		edadIngresada = parseInt( prompt("Ingrese su edad") );
+
+		while(isNaN(edadIngresada) || edadIngresada < 0 || edadIngresada > 123){
+			edadIngresada = parseInt( prompt("Error, ingrese una edad valida") );
+		}
+
+		if (banderaDelPrimero == true) {
+			edadMayor = edadIngresada;
+			edadMenor = edadIngresada;
+			banderaDelPrimero = false;
+		}else{
+			if (edadIngresada > edadMayor) {
+				personaMayor = nombreIngresado;
+				edadMayor = edadIngresada;
+			}else{
+				if (edadIngresada < edadMenor) {
+					personaMenor = nombreIngresado;
+					edadMenor = edadIngresada;
+				}
+			}
+		}
+
+		respuesta=prompt("desea continuar? si/no");
+	}
+
+	document.write("El nombre de la persona menor es:" + personaMenor + "<br>");
+	document.write("La edad de la persona menor es:" + edadMenor + "<br>");
+	document.write("El nombre de la persona mayor es:" + personaMayor + "<br>");
+	document.write("La edad de la persona mayorr es:" + edadMayor + "<br>");
 
 
+
+
+
+
+	//EJEMPLO
 	/*al presionar el botón "mostrar", mostrar 125 repeticiones 
 	con números ASCENDENTE, desde el 1 al 125. 
 	a) contar los numeros IMPARES 
