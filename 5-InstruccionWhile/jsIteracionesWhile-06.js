@@ -47,7 +47,7 @@ function mostrar()
 	promedio = acumulador / contador;
 
 	document.getElementById("txtIdSuma").value=acumulador;
-	document.getElementById("txtIdPromedio").value=acumulador;
+	document.getElementById("txtIdPromedio").value=promedio;
 
 
 }//FIN DE LA FUNCIÓN

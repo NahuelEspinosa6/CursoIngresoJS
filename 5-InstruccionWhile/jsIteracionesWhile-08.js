@@ -3,11 +3,13 @@ Al presionar el botón pedir  números  hasta que el usuario quiera,
 sumar los que son positivos y multiplicar los negativos.*/
 function mostrar()
 {
+	// declaro variables
 	let contador;
 	let respuesta;
 	let sumaPositivos;
 	let multiplicacionNegativos;
 	
+	// inicializo las variables
 	contador=0;
 	sumaPositivos=0;
 	multiplicacionNegativos=1;
@@ -17,13 +19,14 @@ function mostrar()
 		contador = contador +1;
 		numeroIngresado = prompt("ingrese un numero");
 		numeroIngresado = parseInt(numeroIngresado);
-
+		while(isNaN(numeroIngresado)){
+			numeroIngresado = prompt("Error, ingrese un numero");
+			numeroIngresado = parseInt(numeroIngresado);
+		}
 		if(numeroIngresado > 0){
 			sumaPositivos += numeroIngresado;
 		}else{
-			if(numeroIngresado < 0){
-				multiplicacionNegativos *= numeroIngresado;
-			}
+			multiplicacionNegativos *= numeroIngresado;
 		}
 
 		respuesta = prompt("quiere ingresar otro numero", "si");

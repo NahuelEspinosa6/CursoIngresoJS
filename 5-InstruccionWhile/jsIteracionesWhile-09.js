@@ -2,14 +2,14 @@
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
 function mostrar()
-{	// declarar variables
-	var banderaDelPrimero;
-	var numeroIngresado;
-	var numeroMaximo;
-	var numeroMinimo;
-	var respuesta;
+{	// declarar letiables
+	let banderaDelPrimero;
+	let numeroIngresado;
+	let numeroMaximo;
+	let numeroMinimo;
+	let respuesta;
 	
-	//iniciar variables
+	//iniciar letiables
 	banderaDelPrimero=true;
 	respuesta='si';
 	
@@ -28,11 +28,11 @@ function mostrar()
 			numeroMinimo = numeroIngresado;
 			banderaDelPrimero = false;
 		}else{
-			if(numeroMaximo < numeroIngresado){ // numerp ingresado es mayor que numero maximo
+			if(numeroIngresado > numeroMaximo){ // numero ingresado es mayor que numero maximo
 				numeroMaximo = numeroIngresado;
 				
 			}else{
-				if(numeroMinimo > numeroIngresado){ // numero ingresado es menor que numero minimo
+				if(numeroIngresado < numeroMinimo){ // numero ingresado es menor que numero minimo
 					numeroMinimo = numeroIngresado;
 				}
 			}
@@ -42,6 +42,6 @@ function mostrar()
 	} // fin del while principal
 
 	document.getElementById("txtIdMaximo").value=numeroMaximo;
-	document.getElementById("txtIdMinimmo").value=numeroMinimo;
+	document.getElementById("txtIdMinimo").value=numeroMinimo;
 	
 }//FIN DE LA FUNCIÓN
