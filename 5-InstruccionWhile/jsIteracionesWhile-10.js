@@ -76,7 +76,7 @@ function mostrar()
 	document.write("la  cantidad de ceros es : " + contadorCeros + "<br>");
 	document.write("la cantidad de pares es : " + contadorPares + "<br>");
 	document.write("promedio de positivos es : " + promedioPositivos + "<br>");
-	document.write("la cantidad de negativos es : " + promedioNegativos + "<br>");
+	document.write("promedio de negativos es : " + promedioNegativos + "<br>");
 	document.write("la diferencia entre positivos y negativos es : " + diferencia + "<br>");
 
 
