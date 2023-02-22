@@ -4,6 +4,7 @@ function mostrar()
 
 	let i;
 
+	// inicializo la variable,  evaluo la condicion, incremento o decremento;
 	for(i = 1; i < 11; i++){
 		console.log(i);
 	}
